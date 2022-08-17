@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>ch.giuntini</groupId>
+    <artifactId>NETJLO</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0.0-pre</version>
+    <modules>
+        <module>NETJLO-core</module>
+        <module>NETJLO-timed</module>
+        <module>NETJLO-fos</module>
+    </modules>
+
+    <properties>
+        <maven.compiler.source>18.0.2</maven.compiler.source>
+        <maven.compiler.target>18.0.2</maven.compiler.target>
+    </properties>
+
+</project>
