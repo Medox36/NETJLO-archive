@@ -45,6 +45,7 @@ public class DefaultReceiverThread<I extends Interpretable<DefaultPackage>> exte
                 }
             } catch (IOException | ClassNotFoundException e) {
                 e.printStackTrace();
+                close();
             }
         }
         try {

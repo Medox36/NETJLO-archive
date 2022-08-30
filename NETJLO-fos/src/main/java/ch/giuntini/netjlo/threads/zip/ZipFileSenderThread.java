@@ -93,7 +93,8 @@ public class ZipFileSenderThread<S extends DefaultSocket> extends Thread impleme
                 objectOutputStream.writeObject(new FilePartPackage(true));
                 objectOutputStream.flush();
             } catch (IOException e) {
-                throw new RuntimeException(e);
+                e.printStackTrace();
+                close();
             }
         }
     }

@@ -40,6 +40,7 @@ public class SenderThread<S extends DefaultSocket,P extends DefaultPackage> exte
                         }
                     } catch (IOException e) {
                         e.printStackTrace();
+                        close();
                     }
                 }
                 try {

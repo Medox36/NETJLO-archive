@@ -78,7 +78,8 @@ public class ZipFileReceiverThread<I extends Interpretable> extends Thread imple
             }
             interpreter.interpret(file);
         } catch (IOException | ClassNotFoundException e) {
-            throw new RuntimeException(e);
+            e.printStackTrace();
+            close();
         }
     }
 

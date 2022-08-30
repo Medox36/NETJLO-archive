@@ -47,6 +47,7 @@ public class TimedSenderThread<S extends DefaultSocket, P extends TimedPackage> 
                         }
                     } catch (IOException e) {
                         e.printStackTrace();
+                        close();
                     }
                 }
                 try {

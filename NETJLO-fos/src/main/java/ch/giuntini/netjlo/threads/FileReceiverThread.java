@@ -64,7 +64,8 @@ public class FileReceiverThread<I extends Interpretable> extends Thread implemen
             bw.close();
             interpreter.interpret(file);
         } catch (IOException | ClassNotFoundException e) {
-            throw new RuntimeException(e);
+            e.printStackTrace();
+            close();
         }
     }
 

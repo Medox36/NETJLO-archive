@@ -46,6 +46,7 @@ public class ReceiverThread<S extends DefaultSocket, P extends DefaultPackage, I
                 }
             } catch (IOException | ClassNotFoundException e) {
                 e.printStackTrace();
+                close();
             }
         }
         try {

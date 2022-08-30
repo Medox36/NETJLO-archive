@@ -49,6 +49,7 @@ public class TimedReceiverThread<S extends DefaultSocket, P extends TimedPackage
                 packageValuation(p);
             } catch (IOException | ClassNotFoundException e) {
                 e.printStackTrace();
+                close();
             }
         }
         try {

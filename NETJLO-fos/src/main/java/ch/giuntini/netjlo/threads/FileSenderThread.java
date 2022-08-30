@@ -71,7 +71,8 @@ public class FileSenderThread<S extends DefaultSocket> extends Thread implements
                 objectOutputStream.writeObject(new FilePartPackage(true));
                 objectOutputStream.flush();
             } catch (IOException e) {
-                throw new RuntimeException(e);
+                e.printStackTrace();
+                close();
             }
         }
     }

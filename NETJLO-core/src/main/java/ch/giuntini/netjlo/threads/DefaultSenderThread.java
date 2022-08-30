@@ -40,6 +40,7 @@ public class DefaultSenderThread extends Thread implements AutoCloseable {
                         }
                     } catch (IOException e) {
                         e.printStackTrace();
+                        close();
                     }
                 }
                 try {
