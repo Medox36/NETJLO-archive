@@ -1,3 +1,18 @@
+This repository is archived and will no longer receive any updates or fixes.  
+In addition this repository might get deleted in the future.
+The new repository can be found here: [NETJLO](https://github.com/Medox36/NETJLO)  
+  
+Note:
+> Each Module has now its own repository, all are linked in the new root repository (link above).
+  
+Warning:  
+> This Source code may contain:
+> - Bugs
+> - Wunerabilities
+> - Logic errors
+
+---  
+
 # NETJLO
 Package for creating connections over the java.net.Socket, which deals with incoming and outgoing data. Mainly to use for not writing boilerplate code. 
 
